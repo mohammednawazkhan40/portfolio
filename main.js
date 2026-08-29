@@ -193,9 +193,9 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   let w, h, nodes, animId;
 
   const COLORS = {
-    node:   'rgba(99, 102, 241, 0.35)',
-    line:   'rgba(99, 102, 241, 0.06)',
-    node2:  'rgba(255, 255, 255, 0.15)',
+    node:   'rgba(79, 70, 229, 0.18)',
+    line:   'rgba(79, 70, 229, 0.05)',
+    node2:  'rgba(107, 114, 128, 0.2)',
   };
   const NODE_COUNT = 55;
   const MAX_DIST   = 180;
@@ -236,8 +236,8 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
         if (dist < MAX_DIST) {
           const alpha = (1 - dist / MAX_DIST) * 0.4;
           ctx.beginPath();
-          ctx.strokeStyle = `rgba(99, 102, 241, ${alpha * 0.18})`;
-          ctx.lineWidth = 0.6;
+          ctx.strokeStyle = `rgba(79, 70, 229, ${alpha * 0.1})`;
+          ctx.lineWidth = 0.5;
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
           ctx.stroke();
