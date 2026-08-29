@@ -2,7 +2,7 @@
 
 **Senior Generative AI Engineer | AI Solutions Architect | Enterprise AI | Multi-Agent Systems | Voice AI**
 
-Live site: [https://nawaz-khan.github.io/portfolio](https://nawaz-khan.github.io/portfolio)
+Live site: [https://mohammednawazkhan40.github.io/portfolio/](https://mohammednawazkhan40.github.io/portfolio/)
 
 ---
 
