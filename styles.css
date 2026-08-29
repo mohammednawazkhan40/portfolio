@@ -2204,3 +2204,161 @@ input, textarea, select { font-family: inherit; }
 .nav-logo .logo-text {
   letter-spacing: -0.01em;
 }
+
+/* ──────────────── CALL NOW BUTTON ───────────────────────────── */
+.btn-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  border: 1px solid transparent;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-base);
+  white-space: nowrap;
+  text-decoration: none;
+}
+.btn-call:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.35);
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+
+/* ──────────────── WHATSAPP BUTTON ───────────────────────────── */
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  border: 1px solid transparent;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-base);
+  white-space: nowrap;
+  text-decoration: none;
+}
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+  background: linear-gradient(135deg, #2edb6f 0%, #25d366 100%);
+}
+
+/* ──────────────── NAVBAR WHATSAPP ICON ──────────────────────── */
+.nav-whatsapp {
+  color: #25d366 !important;
+}
+.nav-whatsapp:hover {
+  background: rgba(37, 211, 102, 0.1) !important;
+  color: #2edb6f !important;
+}
+
+/* ──────────────── WHATSAPP CONTACT CARD ─────────────────────── */
+.contact-card-whatsapp {
+  border-color: rgba(37, 211, 102, 0.15) !important;
+}
+.contact-card-whatsapp:hover {
+  border-color: rgba(37, 211, 102, 0.4) !important;
+  background: rgba(37, 211, 102, 0.04) !important;
+}
+.contact-card-icon-whatsapp {
+  background: rgba(37, 211, 102, 0.1) !important;
+  border-color: rgba(37, 211, 102, 0.2) !important;
+  color: #25d366 !important;
+}
+
+/* ──────────────── FLOATING WHATSAPP BUTTON (always visible) ─── */
+.whatsapp-float {
+  position: fixed;
+  bottom: 88px;
+  right: 32px;
+  z-index: 100;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.55);
+}
+.whatsapp-float svg {
+  color: #fff;
+}
+.whatsapp-float-tooltip {
+  position: absolute;
+  right: 60px;
+  background: rgba(5, 11, 24, 0.92);
+  color: #f1f5f9;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(37, 211, 102, 0.2);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+}
+.whatsapp-float:hover .whatsapp-float-tooltip {
+  opacity: 1;
+}
+
+/* ──────────────── FLOATING CALL BUTTON ──────────────────────── */
+.call-float {
+  position: fixed;
+  bottom: 152px;
+  right: 32px;
+  z-index: 100;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(22, 163, 74, 0.4);
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+.call-float:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(22, 163, 74, 0.5);
+}
+.call-float svg {
+  color: #fff;
+}
+.call-float-tooltip {
+  position: absolute;
+  right: 60px;
+  background: rgba(5, 11, 24, 0.92);
+  color: #f1f5f9;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(22, 163, 74, 0.2);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+}
+.call-float:hover .call-float-tooltip {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float { bottom: 80px; right: 16px; width: 46px; height: 46px; }
+  .call-float     { bottom: 140px; right: 16px; width: 46px; height: 46px; }
+}
