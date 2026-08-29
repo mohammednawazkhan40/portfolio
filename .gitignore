@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*.swo
+*~
+
+# Node (if any tooling added later)
+node_modules/
+npm-debug.log*
+
+# Build artifacts
+dist/
+.cache/
+
+# Private files — add your real resume and photo manually
+# assets/resume.pdf
+# assets/profile.jpg

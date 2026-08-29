@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohd Nawaz Khan | Senior Generative AI Engineer | AI Solutions Architect</title>
+  <meta name="description" content="Portfolio of Mohd Nawaz Khan, Senior Generative AI Engineer and AI Solutions Architect specializing in Enterprise AI, LLMs, RAG, Multi-Agent Systems, Voice AI, AI Automation, Full Stack Engineering, and cloud-native AI applications." />
+  <meta name="keywords" content="Mohd Nawaz Khan, Generative AI Engineer, AI Solutions Architect, Enterprise AI, LLM, RAG, Multi-Agent Systems, Voice AI, LangChain, LangGraph, CrewAI, OpenAI, Azure AI, FastAPI, Python, Bengaluru" />
+  <meta name="author" content="Mohd Nawaz Khan" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mohdnawazkhan.dev/" />
+  <meta property="og:title" content="Mohd Nawaz Khan | Senior Generative AI Engineer" />
+  <meta property="og:description" content="Senior Generative AI Engineer and AI Solutions Architect building production-ready Enterprise AI systems." />
+  <meta property="og:image" content="assets/profile.jpg" />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mohd Nawaz Khan | Senior Generative AI Engineer" />
+  <meta name="twitter:description" content="Senior Generative AI Engineer and AI Solutions Architect building production-ready Enterprise AI systems." />
+  <meta name="twitter:image" content="assets/profile.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="animations.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ NAVIGATION ═══ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Mohd Nawaz Khan - Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">MNK</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#expertise" class="nav-link">Expertise</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#techstack" class="nav-link">Tech Stack</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://www.linkedin.com/in/mohd-nawaz-khan-b78643219" target="_blank" rel="noopener noreferrer" class="nav-icon-btn" aria-label="LinkedIn Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/Nawaz-Khan" target="_blank" rel="noopener noreferrer" class="nav-icon-btn" aria-label="GitHub Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="assets/resume.pdf" download="Mohd_Nawaz_Khan_Resume.pdf" class="btn-resume" aria-label="Download Resume">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div class="mobile-nav-content">
+      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <ul role="list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#expertise" class="mobile-nav-link">Expertise</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#techstack" class="mobile-nav-link">Tech Stack</a></li>
+        <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+        <li><a href="#achievements" class="mobile-nav-link">Achievements</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-actions">
+        <a href="https://www.linkedin.com/in/mohd-nawaz-khan-b78643219" target="_blank" rel="noopener noreferrer" class="btn-primary">LinkedIn</a>
+        <a href="https://github.com/Nawaz-Khan" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub</a>
+        <a href="assets/resume.pdf" download="Mohd_Nawaz_Khan_Resume.pdf" class="btn-resume-mobile">Download Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════ HERO ═══════ -->
+    <section id="home" class="hero-section" aria-label="Hero">
+      <div class="hero-bg">
+        <canvas id="heroCanvas" aria-hidden="true"></canvas>
+        <div class="hero-grid" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-content" data-animate="fade-up">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            SENIOR GENERATIVE AI ENGINEER
+          </div>
+
+          <h1 class="hero-name">MOHD NAWAZ<br /><span class="name-accent">KHAN</span></h1>
+
+          <div class="hero-titles" aria-label="Professional titles">
+            <div class="title-rotator">
+              <span class="title-item active">Senior Generative AI Engineer</span>
+              <span class="title-item">AI Solutions Architect</span>
+              <span class="title-item">Enterprise AI Specialist</span>
+              <span class="title-item">Multi-Agent Systems Engineer</span>
+              <span class="title-item">Voice AI Developer</span>
+            </div>
+          </div>
+
+          <p class="hero-description">
+            Building scalable, secure, and production-ready AI applications using Large Language Models, RAG, Multi-Agent Systems, Voice AI, AI Automation, and cloud-native architectures.
+          </p>
+
+          <div class="hero-cta" role="group" aria-label="Call to action buttons">
+            <a href="#projects" class="btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              View My Projects
+            </a>
+            <a href="assets/resume.pdf" download="Mohd_Nawaz_Khan_Resume.pdf" class="btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn-ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              Let's Connect
+            </a>
+          </div>
+
+          <div class="hero-badges" role="list" aria-label="Core capabilities">
+            <span class="badge" role="listitem">Generative AI</span>
+            <span class="badge" role="listitem">LLMs</span>
+            <span class="badge" role="listitem">RAG</span>
+            <span class="badge" role="listitem">AI Agents</span>
+            <span class="badge" role="listitem">Multi-Agent Systems</span>
+            <span class="badge" role="listitem">Voice AI</span>
+            <span class="badge" role="listitem">AI Automation</span>
+            <span class="badge" role="listitem">Enterprise AI</span>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper" data-animate="fade-left">
+          <div class="hero-image-frame" aria-label="Profile photograph of Mohd Nawaz Khan">
+            <div class="image-glow" aria-hidden="true"></div>
+            <div class="image-ring ring-1" aria-hidden="true"></div>
+            <div class="image-ring ring-2" aria-hidden="true"></div>
+            <div class="image-ring ring-3" aria-hidden="true"></div>
+            <div class="image-container">
+              <img src="assets/profile.jpg" alt="Mohd Nawaz Khan - Senior Generative AI Engineer" class="profile-image" loading="eager" onerror="this.onerror=null;this.src='assets/profile-placeholder.svg'" />
+            </div>
+            <div class="image-nodes" aria-hidden="true">
+              <span class="node node-1"></span>
+              <span class="node node-2"></span>
+              <span class="node node-3"></span>
+              <span class="node node-4"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metrics Strip -->
+      <div class="metrics-strip" role="list" aria-label="Professional metrics">
+        <div class="metric-item" role="listitem">
+          <span class="metric-value">6+</span>
+          <span class="metric-label">Years Experience</span>
+        </div>
+        <div class="metric-divider" aria-hidden="true"></div>
+        <div class="metric-item" role="listitem">
+          <span class="metric-value">Enterprise</span>
+          <span class="metric-label">AI Applications</span>
+        </div>
+        <div class="metric-divider" aria-hidden="true"></div>
+        <div class="metric-item" role="listitem">
+          <span class="metric-value">Multi-Agent</span>
+          <span class="metric-label">Systems</span>
+        </div>
+        <div class="metric-divider" aria-hidden="true"></div>
+        <div class="metric-item" role="listitem">
+          <span class="metric-value">Full Stack</span>
+          <span class="metric-label">Engineering</span>
+        </div>
+        <div class="metric-divider" aria-hidden="true"></div>
+        <div class="metric-item" role="listitem">
+          <span class="metric-value">Production</span>
+          <span class="metric-label">Ready AI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ ABOUT ══════ -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Who I Am</span>
+          <h2 id="about-heading" class="section-title">About Me</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text" data-animate="fade-up">
+            <p class="about-lead">
+              I am a <strong>Senior Generative AI Engineer</strong> with 6+ years of experience across Enterprise AI, Full Stack Development, and AI-powered business solutions.
+            </p>
+            <p>
+              I specialize in designing scalable AI applications using <strong>Large Language Models</strong>, <strong>Retrieval-Augmented Generation</strong>, <strong>Multi-Agent Systems</strong>, <strong>Voice AI</strong>, AI Automation, and cloud-native architectures.
+            </p>
+            <p>
+              My engineering experience spans Python, Java, FastAPI, Spring Boot, LangChain, LangGraph, CrewAI, OpenAI, Azure OpenAI, Docker, enterprise APIs, databases, and cloud platforms.
+            </p>
+            <p>
+              Passionate about building secure, production-ready AI systems that automate business processes, improve operational efficiency, and transform enterprise workflows.
+            </p>
+
+            <div class="about-info" role="list" aria-label="Contact information">
+              <div class="info-item" role="listitem">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Bengaluru, India</span>
+              </div>
+              <div class="info-item" role="listitem">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:mohammednawazkhan40@gmail.com">mohammednawazkhan40@gmail.com</a>
+              </div>
+              <div class="info-item" role="listitem">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                <a href="tel:+918088050599">+91 8088050599</a>
+              </div>
+              <div class="info-item" role="listitem">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                <a href="https://www.linkedin.com/in/mohd-nawaz-khan-b78643219" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards" data-animate="fade-up" data-delay="200">
+            <article class="capability-card">
+              <div class="capability-number">01</div>
+              <h3 class="capability-title">Enterprise AI</h3>
+              <p class="capability-desc">Designing scalable AI applications for enterprise environments.</p>
+              <div class="capability-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+            </article>
+            <article class="capability-card">
+              <div class="capability-number">02</div>
+              <h3 class="capability-title">Agentic AI</h3>
+              <p class="capability-desc">Building autonomous and collaborative AI agents for business workflows.</p>
+              <div class="capability-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
+              </div>
+            </article>
+            <article class="capability-card">
+              <div class="capability-number">03</div>
+              <h3 class="capability-title">Intelligent Knowledge Systems</h3>
+              <p class="capability-desc">Building RAG and semantic-search systems over enterprise knowledge.</p>
+              <div class="capability-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+              </div>
+            </article>
+            <article class="capability-card">
+              <div class="capability-number">04</div>
+              <h3 class="capability-title">AI Automation</h3>
+              <p class="capability-desc">Automating business processes through LLMs, agents, APIs, and intelligent workflows.</p>
+              <div class="capability-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ EXPERTISE ══ -->
+    <section id="expertise" class="section section-alt" aria-labelledby="expertise-heading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">What I Build</span>
+          <h2 id="expertise-heading" class="section-title">Core Expertise</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="expertise-grid">
+
+          <article class="expertise-card" data-animate="fade-up" data-delay="0">
+            <div class="expertise-card-inner">
+              <div class="expertise-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20M12 2a14.5 14.5 0 010 20M2 12h20"/></svg>
+              </div>
+              <h3>Generative AI Applications</h3>
+              <p>LLM-powered enterprise applications using modern foundation models.</p>
+              <div class="expertise-tags">
+                <span>GPT-4</span><span>Claude</span><span>Gemini</span><span>Llama</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="expertise-card" data-animate="fade-up" data-delay="50">
+            <div class="expertise-card-inner">
+              <div class="expertise-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+              </div>
+              <h3>Retrieval-Augmented Generation</h3>
+              <p>Knowledge assistants and enterprise search systems using vector databases.</p>
+              <div class="expertise-tags">
+                <span>RAG</span><span>Pinecone</span><span>ChromaDB</span><span>FAISS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="expertise-card" data-animate="fade-up" data-delay="100">
+            <div class="expertise-card-inner">
+              <div class="expertise-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M12 12l-5 5M12 12l5 5"/></svg>
+              </div>
+              <h3>Multi-Agent Systems</h3>
+              <p>Collaborative AI agents capable of delegating and executing business workflows.</p>
+              <div class="expertise-tags">
+                <span>LangGraph</span><span>CrewAI</span><span>AutoGen</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="expertise-card" data-animate="fade-up" data-delay="150">
+            <div class="expertise-card-inner">
+              <div class="expertise-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8"/></svg>
+              </div>
+              <h3>Voice AI</h3>
+              <p>Conversational voice systems using speech recognition, LLMs, and text-to-speech.</p>
+              <div class="expertise-tags">
+                <span>Whisper</span><span>ElevenLabs</span><span>OpenAI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="expertise-card" data-animate="fade-up" data-delay="200">
+            <div class="expertise-card-inner">
+              <div class="expertise-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <h3>Document Intelligence</h3>
+              <p>AI-powered PDF/document extraction, classification, summarization, and querying.</p>
+              <div class="expertise-tags">
+                <span>OCR</span><span>LangChain</span><span>OpenAI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="expertise-card" data-animate="fade-up" data-delay="250">
+            <div class="expertise-card-inner">
+              <div class="expertise-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              </div>
+              <h3>Enterprise AI Copilots</h3>
+              <p>AI assistants for knowledge retrieval, email drafting, meeting summaries, and proposal generation.</p>
+              <div class="expertise-tags">
+                <span>GPT-4</span><span>FastAPI</span><span>React</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="expertise-card" data-animate="fade-up" data-delay="300">
+            <div class="expertise-card-inner">
+              <div class="expertise-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <h3>AI Automation</h3>
+              <p>AI-driven workflow automation for enterprise operations.</p>
+              <div class="expertise-tags">
+                <span>LangChain</span><span>Python</span><span>APIs</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="expertise-card" data-animate="fade-up" data-delay="350">
+            <div class="expertise-card-inner">
+              <div class="expertise-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <h3>Cloud-Native AI</h3>
+              <p>Containerized and scalable AI applications deployed using Azure and AWS.</p>
+              <div class="expertise-tags">
+                <span>Azure</span><span>AWS</span><span>Docker</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ EXPERIENCE ═ -->
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Career Journey</span>
+          <h2 id="experience-heading" class="section-title">Professional Experience</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="timeline" role="list">
+
+          <!-- Job 1 -->
+          <article class="timeline-item current" role="listitem" data-animate="fade-up">
+            <div class="timeline-marker" aria-hidden="true">
+              <div class="marker-dot"></div>
+              <div class="marker-pulse"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title-group">
+                  <span class="timeline-badge current-badge">Current</span>
+                  <h3 class="timeline-role">Generative AI Application Engineer</h3>
+                  <div class="timeline-company">ISAN Data Systems Pvt. Ltd.</div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-period">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    07/2024 – Present
+                  </span>
+                  <span class="timeline-location">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Bengaluru, India
+                  </span>
+                </div>
+              </div>
+              <ul class="timeline-responsibilities" role="list">
+                <li>Designed and developed enterprise-grade Generative AI applications using GPT-4, Claude, Gemini, and Llama models.</li>
+                <li>Built production-ready Multi-Agent AI systems using LangGraph and CrewAI for workflow automation.</li>
+                <li>Developed Retrieval-Augmented Generation (RAG) solutions with vector databases for enterprise knowledge management.</li>
+                <li>Implemented AI-powered document intelligence platforms for PDF analysis, semantic search, and intelligent summarization.</li>
+                <li>Developed Voice AI applications integrating Speech-to-Text, Text-to-Speech, and real-time conversational AI.</li>
+                <li>Integrated enterprise AI solutions with REST APIs, databases, CRM, ERP, and third-party business systems.</li>
+                <li>Optimized LLM performance through prompt engineering, caching, streaming responses, and cost optimization.</li>
+                <li>Containerized AI applications using Docker and deployed scalable solutions on Azure and AWS.</li>
+                <li>Worked closely with solution architects, product teams, and enterprise stakeholders to deliver AI products.</li>
+              </ul>
+              <div class="timeline-env">
+                <span class="env-tag">Python</span><span class="env-tag">FastAPI</span><span class="env-tag">LangChain</span><span class="env-tag">LangGraph</span><span class="env-tag">CrewAI</span><span class="env-tag">OpenAI</span><span class="env-tag">Azure OpenAI</span><span class="env-tag">Pinecone</span><span class="env-tag">PostgreSQL</span><span class="env-tag">Docker</span><span class="env-tag">Azure</span><span class="env-tag">AWS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Job 2 -->
+          <article class="timeline-item" role="listitem" data-animate="fade-up" data-delay="100">
+            <div class="timeline-marker" aria-hidden="true">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title-group">
+                  <h3 class="timeline-role">Junior Full Stack Engineer</h3>
+                  <div class="timeline-company">Cognizant</div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-period">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    11/2022 – 06/2024
+                  </span>
+                </div>
+              </div>
+              <ul class="timeline-responsibilities" role="list">
+                <li>Developed enterprise web applications using Java, Spring Boot, Hibernate, and REST APIs.</li>
+                <li>Designed backend microservices and reusable APIs following clean architecture principles.</li>
+                <li>Implemented authentication, authorization, and secure API integrations.</li>
+                <li>Optimized SQL queries and improved backend performance.</li>
+                <li>Collaborated with cross-functional Agile teams to deliver enterprise applications.</li>
+                <li>Participated in code reviews, debugging, testing, deployment, and production support.</li>
+              </ul>
+              <div class="timeline-env">
+                <span class="env-tag">Java</span><span class="env-tag">Spring Boot</span><span class="env-tag">Hibernate</span><span class="env-tag">REST APIs</span><span class="env-tag">Oracle SQL</span><span class="env-tag">HTML</span><span class="env-tag">CSS</span><span class="env-tag">JavaScript</span><span class="env-tag">Git</span><span class="env-tag">Maven</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Job 3 -->
+          <article class="timeline-item" role="listitem" data-animate="fade-up" data-delay="200">
+            <div class="timeline-marker" aria-hidden="true">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title-group">
+                  <h3 class="timeline-role">Java Full Stack Engineer (Intern)</h3>
+                  <div class="timeline-company">KodNest</div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-period">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    09/2020 – 08/2022
+                  </span>
+                </div>
+              </div>
+              <ul class="timeline-responsibilities" role="list">
+                <li>Completed intensive Java Full Stack training covering backend, frontend, and database development.</li>
+                <li>Developed end-to-end web applications using Java, JDBC, Servlets, JSP, HTML, CSS, JavaScript, and Oracle SQL.</li>
+                <li>Built CRUD applications with MVC architecture and database integration.</li>
+                <li>Implemented authentication, session management, and responsive UI components.</li>
+                <li>Worked on object-oriented programming, collections, exception handling, and software engineering best practices.</li>
+              </ul>
+              <div class="timeline-env">
+                <span class="env-tag">Java</span><span class="env-tag">J2EE</span><span class="env-tag">JDBC</span><span class="env-tag">Servlets</span><span class="env-tag">Oracle SQL</span><span class="env-tag">HTML</span><span class="env-tag">CSS</span><span class="env-tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ PROJECTS ═══ -->
+    <section id="projects" class="section section-alt" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">What I've Built</span>
+          <h2 id="projects-heading" class="section-title">Featured Enterprise AI Projects</h2>
+          <div class="section-line" aria-hidden="true"></div>
+          <p class="section-subtitle">Production-ready AI systems built for enterprise environments</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 01 -->
+          <article class="project-card" data-animate="fade-up" data-delay="0">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                </div>
+                <h3 class="project-title">Enterprise AI Knowledge Assistant</h3>
+              </div>
+              <p class="project-description">Designed an enterprise chatbot using RAG architecture with semantic search across business documents, enabling employees to retrieve accurate organizational knowledge using natural language.</p>
+
+              <div class="project-architecture" aria-label="Architecture diagram for Enterprise AI Knowledge Assistant">
+                <div class="arch-flow">
+                  <div class="arch-node">User Query</div>
+                  <div class="arch-arrow">↓</div>
+                  <div class="arch-node">FastAPI</div>
+                  <div class="arch-arrow">↓</div>
+                  <div class="arch-node highlight">RAG Pipeline</div>
+                  <div class="arch-arrow">↓</div>
+                  <div class="arch-node">Pinecone Vector Search</div>
+                  <div class="arch-arrow">↓</div>
+                  <div class="arch-node highlight">GPT-4</div>
+                  <div class="arch-arrow">↓</div>
+                  <div class="arch-node result">Grounded Enterprise Answer</div>
+                </div>
+                <p class="arch-caption">Conceptual architecture representation</p>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-tag">LangChain</span><span class="stack-tag">GPT-4</span><span class="stack-tag">Pinecone</span><span class="stack-tag">FastAPI</span><span class="stack-tag">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card" data-animate="fade-up" data-delay="100">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M12 12l-5 5M12 12l5 5"/></svg>
+                </div>
+                <h3 class="project-title">Multi-Agent Enterprise Automation Platform</h3>
+              </div>
+              <p class="project-description">Developed autonomous AI agents for HR, Sales, Finance, and Operations capable of collaborating, delegating tasks, and executing business workflows.</p>
+
+              <div class="project-architecture agent-arch" aria-label="Multi-agent architecture diagram">
+                <div class="agent-orchestrator">Central Orchestrator</div>
+                <div class="agent-connections" aria-hidden="true">
+                  <div class="agent-node">HR Agent</div>
+                  <div class="agent-node">Sales Agent</div>
+                  <div class="agent-node">Finance Agent</div>
+                  <div class="agent-node">Ops Agent</div>
+                </div>
+                <p class="arch-caption">Conceptual agent collaboration representation</p>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-tag">LangGraph</span><span class="stack-tag">CrewAI</span><span class="stack-tag">GPT-4</span><span class="stack-tag">Python</span><span class="stack-tag">FastAPI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-card" data-animate="fade-up" data-delay="200">
+            <div class="project-number">03</div>
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/></svg>
+                </div>
+                <h3 class="project-title">Voice AI Customer Support Assistant</h3>
+              </div>
+              <p class="project-description">Built an AI-powered voice assistant capable of handling customer interactions, speech recognition, response generation, and automated call summaries.</p>
+
+              <div class="project-architecture" aria-label="Voice AI pipeline diagram">
+                <div class="arch-flow voice-flow">
+                  <div class="arch-node">Customer Voice</div>
+                  <div class="arch-arrow">↓</div>
+                  <div class="arch-node highlight">Speech-to-Text (Whisper)</div>
+                  <div class="arch-arrow">↓</div>
+                  <div class="arch-node">AI Processing (OpenAI)</div>
+                  <div class="arch-arrow">↓</div>
+                  <div class="arch-node highlight">Response Generation</div>
+                  <div class="arch-arrow">↓</div>
+                  <div class="arch-node">Text-to-Speech (ElevenLabs)</div>
+                  <div class="arch-arrow">↓</div>
+                  <div class="arch-node result">Customer + Call Summary</div>
+                </div>
+                <p class="arch-caption">Conceptual voice pipeline representation</p>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-tag">Whisper</span><span class="stack-tag">ElevenLabs</span><span class="stack-tag">OpenAI</span><span class="stack-tag">FastAPI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-card" data-animate="fade-up" data-delay="300">
+            <div class="project-number">04</div>
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                </div>
+                <h3 class="project-title">Intelligent Document Processing Platform</h3>
+              </div>
+              <p class="project-description">Created an AI platform for extracting, classifying, summarizing, and querying enterprise documents including invoices, contracts, resumes, and reports.</p>
+
+              <div class="project-architecture doc-arch" aria-label="Document intelligence platform diagram">
+                <div class="doc-types">
+                  <span class="doc-type">Invoices</span>
+                  <span class="doc-type">Contracts</span>
+                  <span class="doc-type">Resumes</span>
+                  <span class="doc-type">Reports</span>
+                </div>
+                <div class="doc-arrow">↓</div>
+                <div class="doc-capabilities">
+                  <span class="doc-cap">Extract</span>
+                  <span class="doc-cap">Classify</span>
+                  <span class="doc-cap">Summarize</span>
+                  <span class="doc-cap">Query</span>
+                </div>
+                <p class="arch-caption">Conceptual document processing representation</p>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-tag">OCR</span><span class="stack-tag">LangChain</span><span class="stack-tag">OpenAI</span><span class="stack-tag">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 05 -->
+          <article class="project-card project-card-wide" data-animate="fade-up" data-delay="400">
+            <div class="project-number">05</div>
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                </div>
+                <h3 class="project-title">Enterprise AI Copilot</h3>
+              </div>
+              <p class="project-description">Developed an AI Copilot for automating email drafting, meeting summaries, proposal generation, and knowledge retrieval within enterprise environments.</p>
+
+              <div class="copilot-capabilities" aria-label="Copilot capabilities">
+                <div class="copilot-cap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  Email Drafting
+                </div>
+                <div class="copilot-cap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Meeting Summaries
+                </div>
+                <div class="copilot-cap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Proposal Generation
+                </div>
+                <div class="copilot-cap">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  Knowledge Retrieval
+                </div>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-tag">GPT-4</span><span class="stack-tag">FastAPI</span><span class="stack-tag">React</span><span class="stack-tag">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ TECH STACK ═ -->
+    <section id="techstack" class="section" aria-labelledby="techstack-heading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Tools & Technologies</span>
+          <h2 id="techstack-heading" class="section-title">Tech Stack</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="tech-filters" role="tablist" aria-label="Technology categories" data-animate="fade-up">
+          <button class="tech-filter active" data-filter="all" role="tab" aria-selected="true" aria-controls="tech-grid">All</button>
+          <button class="tech-filter" data-filter="ai" role="tab" aria-selected="false" aria-controls="tech-grid">AI</button>
+          <button class="tech-filter" data-filter="programming" role="tab" aria-selected="false" aria-controls="tech-grid">Programming</button>
+          <button class="tech-filter" data-filter="frameworks" role="tab" aria-selected="false" aria-controls="tech-grid">Frameworks</button>
+          <button class="tech-filter" data-filter="databases" role="tab" aria-selected="false" aria-controls="tech-grid">Databases</button>
+          <button class="tech-filter" data-filter="cloud" role="tab" aria-selected="false" aria-controls="tech-grid">Cloud & DevOps</button>
+        </div>
+
+        <div class="tech-grid" id="tech-grid" role="tabpanel" aria-label="Technology list" data-animate="fade-up">
+
+          <!-- AI -->
+          <div class="tech-category-label" data-category="ai">Artificial Intelligence</div>
+          <span class="tech-tag" data-category="ai">Generative AI</span>
+          <span class="tech-tag" data-category="ai">LLMs</span>
+          <span class="tech-tag" data-category="ai">Prompt Engineering</span>
+          <span class="tech-tag" data-category="ai">AI Agents</span>
+          <span class="tech-tag" data-category="ai">Multi-Agent Systems</span>
+          <span class="tech-tag" data-category="ai">Agentic AI</span>
+          <span class="tech-tag" data-category="ai">RAG</span>
+          <span class="tech-tag" data-category="ai">Voice AI</span>
+          <span class="tech-tag" data-category="ai">AI Automation</span>
+          <span class="tech-tag" data-category="ai">AI Workflows</span>
+          <span class="tech-tag" data-category="ai">MCP</span>
+
+          <!-- Programming -->
+          <div class="tech-category-label" data-category="programming">Programming Languages</div>
+          <span class="tech-tag" data-category="programming">Python</span>
+          <span class="tech-tag" data-category="programming">Java</span>
+          <span class="tech-tag" data-category="programming">JavaScript</span>
+          <span class="tech-tag" data-category="programming">SQL</span>
+          <span class="tech-tag" data-category="programming">HTML</span>
+          <span class="tech-tag" data-category="programming">CSS</span>
+
+          <!-- Frameworks -->
+          <div class="tech-category-label" data-category="frameworks">Frameworks & Libraries</div>
+          <span class="tech-tag" data-category="frameworks">FastAPI</span>
+          <span class="tech-tag" data-category="frameworks">Spring Boot</span>
+          <span class="tech-tag" data-category="frameworks">LangChain</span>
+          <span class="tech-tag" data-category="frameworks">LangGraph</span>
+          <span class="tech-tag" data-category="frameworks">CrewAI</span>
+          <span class="tech-tag" data-category="frameworks">AutoGen</span>
+          <span class="tech-tag" data-category="frameworks">LlamaIndex</span>
+
+          <!-- AI Platforms -->
+          <div class="tech-category-label" data-category="ai">AI Platforms & Models</div>
+          <span class="tech-tag" data-category="ai">OpenAI</span>
+          <span class="tech-tag" data-category="ai">Azure OpenAI</span>
+          <span class="tech-tag" data-category="ai">Claude</span>
+          <span class="tech-tag" data-category="ai">Gemini</span>
+          <span class="tech-tag" data-category="ai">Llama</span>
+          <span class="tech-tag" data-category="ai">Whisper</span>
+          <span class="tech-tag" data-category="ai">ElevenLabs</span>
+
+          <!-- Databases -->
+          <div class="tech-category-label" data-category="databases">Databases</div>
+          <span class="tech-tag" data-category="databases">PostgreSQL</span>
+          <span class="tech-tag" data-category="databases">MySQL</span>
+          <span class="tech-tag" data-category="databases">Oracle SQL</span>
+          <span class="tech-tag" data-category="databases">MongoDB</span>
+          <span class="tech-tag" data-category="databases">Pinecone</span>
+          <span class="tech-tag" data-category="databases">ChromaDB</span>
+          <span class="tech-tag" data-category="databases">FAISS</span>
+
+          <!-- Cloud -->
+          <div class="tech-category-label" data-category="cloud">Cloud & DevOps</div>
+          <span class="tech-tag" data-category="cloud">Azure</span>
+          <span class="tech-tag" data-category="cloud">AWS</span>
+          <span class="tech-tag" data-category="cloud">Docker</span>
+          <span class="tech-tag" data-category="cloud">Kubernetes</span>
+          <span class="tech-tag" data-category="cloud">Git</span>
+          <span class="tech-tag" data-category="cloud">GitHub Actions</span>
+          <span class="tech-tag" data-category="cloud">CI/CD</span>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ ARCHITECTURE ═ -->
+    <section id="architecture" class="section section-alt" aria-labelledby="arch-heading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">System Design</span>
+          <h2 id="arch-heading" class="section-title">AI Architecture Patterns</h2>
+          <div class="section-line" aria-hidden="true"></div>
+          <p class="section-subtitle">Conceptual representations of the AI systems I design and build</p>
+        </div>
+
+        <div class="arch-showcase-grid">
+
+          <article class="arch-card" data-animate="fade-up" data-delay="0">
+            <h3 class="arch-card-title">RAG Architecture</h3>
+            <div class="arch-diagram" aria-label="RAG architecture conceptual diagram">
+              <div class="arch-layer">
+                <div class="arch-box input">User Query</div>
+              </div>
+              <div class="arch-connector" aria-hidden="true"></div>
+              <div class="arch-layer">
+                <div class="arch-box process">Embedding Model</div>
+                <div class="arch-box process">Vector DB Search</div>
+              </div>
+              <div class="arch-connector" aria-hidden="true"></div>
+              <div class="arch-layer">
+                <div class="arch-box model">LLM + Context</div>
+              </div>
+              <div class="arch-connector" aria-hidden="true"></div>
+              <div class="arch-layer">
+                <div class="arch-box output">Grounded Response</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="arch-card" data-animate="fade-up" data-delay="100">
+            <h3 class="arch-card-title">Multi-Agent Architecture</h3>
+            <div class="arch-diagram multi-agent-diag" aria-label="Multi-agent architecture conceptual diagram">
+              <div class="ma-orchestrator">Orchestrator Agent</div>
+              <div class="ma-agents">
+                <div class="ma-agent">Planner</div>
+                <div class="ma-agent">Executor</div>
+                <div class="ma-agent">Critic</div>
+                <div class="ma-agent">Memory</div>
+              </div>
+              <div class="ma-tools">
+                <span>APIs</span><span>DBs</span><span>Tools</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="arch-card" data-animate="fade-up" data-delay="200">
+            <h3 class="arch-card-title">Voice AI Pipeline</h3>
+            <div class="arch-diagram" aria-label="Voice AI pipeline conceptual diagram">
+              <div class="arch-layer">
+                <div class="arch-box input">Audio Input</div>
+              </div>
+              <div class="arch-connector" aria-hidden="true"></div>
+              <div class="arch-layer">
+                <div class="arch-box process">STT (Whisper)</div>
+              </div>
+              <div class="arch-connector" aria-hidden="true"></div>
+              <div class="arch-layer">
+                <div class="arch-box model">LLM Processing</div>
+              </div>
+              <div class="arch-connector" aria-hidden="true"></div>
+              <div class="arch-layer">
+                <div class="arch-box process">TTS (ElevenLabs)</div>
+              </div>
+              <div class="arch-connector" aria-hidden="true"></div>
+              <div class="arch-layer">
+                <div class="arch-box output">Voice Response</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="arch-card" data-animate="fade-up" data-delay="300">
+            <h3 class="arch-card-title">Document Intelligence Pipeline</h3>
+            <div class="arch-diagram" aria-label="Document intelligence pipeline conceptual diagram">
+              <div class="arch-layer">
+                <div class="arch-box input">Documents</div>
+              </div>
+              <div class="arch-connector" aria-hidden="true"></div>
+              <div class="arch-layer">
+                <div class="arch-box process">OCR + Extraction</div>
+                <div class="arch-box process">Classification</div>
+              </div>
+              <div class="arch-connector" aria-hidden="true"></div>
+              <div class="arch-layer">
+                <div class="arch-box model">LLM Analysis</div>
+              </div>
+              <div class="arch-connector" aria-hidden="true"></div>
+              <div class="arch-layer">
+                <div class="arch-box output">Summaries + Q&amp;A</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ AI LIFECYCLE ═ -->
+    <section id="workflow" class="section" aria-labelledby="workflow-heading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">End-to-End Engineering</span>
+          <h2 id="workflow-heading" class="section-title">From Prototype to Production</h2>
+          <div class="section-line" aria-hidden="true"></div>
+          <p class="section-subtitle">I work across the entire AI application lifecycle — from designing architecture and integrating foundation models to building APIs, connecting enterprise systems, containerizing, and deploying scalable cloud solutions.</p>
+        </div>
+
+        <div class="workflow-steps" role="list" data-animate="fade-up">
+          <div class="workflow-step" role="listitem">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+              <h3>Problem Definition</h3>
+              <p>Understand the business problem</p>
+            </div>
+          </div>
+          <div class="workflow-connector" aria-hidden="true"></div>
+          <div class="workflow-step" role="listitem">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+              <h3>AI Architecture</h3>
+              <p>Design the system architecture</p>
+            </div>
+          </div>
+          <div class="workflow-connector" aria-hidden="true"></div>
+          <div class="workflow-step" role="listitem">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 000 20"/><path d="M2 12h20"/></svg></div>
+              <h3>Model Selection</h3>
+              <p>Select models and frameworks</p>
+            </div>
+          </div>
+          <div class="workflow-connector" aria-hidden="true"></div>
+          <div class="workflow-step" role="listitem">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+              <h3>Prompt Engineering</h3>
+              <p>Craft optimal prompts</p>
+            </div>
+          </div>
+          <div class="workflow-connector" aria-hidden="true"></div>
+          <div class="workflow-step" role="listitem">
+            <div class="step-number">05</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M12 12l-5 5M12 12l5 5"/></svg></div>
+              <h3>RAG / Agents</h3>
+              <p>Build AI workflows</p>
+            </div>
+          </div>
+          <div class="workflow-connector" aria-hidden="true"></div>
+          <div class="workflow-step" role="listitem">
+            <div class="step-number">06</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+              <h3>API Integration</h3>
+              <p>Connect enterprise systems</p>
+            </div>
+          </div>
+          <div class="workflow-connector" aria-hidden="true"></div>
+          <div class="workflow-step" role="listitem">
+            <div class="step-number">07</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+              <h3>Testing</h3>
+              <p>Test and optimize performance</p>
+            </div>
+          </div>
+          <div class="workflow-connector" aria-hidden="true"></div>
+          <div class="workflow-step" role="listitem">
+            <div class="step-number">08</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h5l3 3v5h-8V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+              <h3>Containerization</h3>
+              <p>Package with Docker</p>
+            </div>
+          </div>
+          <div class="workflow-connector" aria-hidden="true"></div>
+          <div class="workflow-step" role="listitem">
+            <div class="step-number">09</div>
+            <div class="step-content">
+              <div class="step-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+              <h3>Cloud Deployment</h3>
+              <p>Deploy to Azure / AWS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ FULL STACK ══ -->
+    <section id="fullstack" class="section section-alt" aria-labelledby="fullstack-heading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Engineering Foundation</span>
+          <h2 id="fullstack-heading" class="section-title">Full Stack Foundation</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="fullstack-content" data-animate="fade-up">
+          <p class="fullstack-desc">
+            Before specializing in Generative AI, I developed enterprise web applications and backend services using Java, Spring Boot, Hibernate, REST APIs, SQL, and modern software engineering practices. This strong engineering foundation supports my ability to build robust, production-grade AI systems end-to-end.
+          </p>
+          <div class="fullstack-tags">
+            <span class="fs-tag">Java</span>
+            <span class="fs-tag">Spring Boot</span>
+            <span class="fs-tag">Hibernate</span>
+            <span class="fs-tag">REST APIs</span>
+            <span class="fs-tag">Microservices</span>
+            <span class="fs-tag">Oracle SQL</span>
+            <span class="fs-tag">HTML</span>
+            <span class="fs-tag">CSS</span>
+            <span class="fs-tag">JavaScript</span>
+            <span class="fs-tag">Git</span>
+            <span class="fs-tag">Maven</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ CERTIFICATIONS ═ -->
+    <section id="certifications" class="section" aria-labelledby="cert-heading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Credentials</span>
+          <h2 id="cert-heading" class="section-title">Certifications</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="certs-grid">
+          <article class="cert-card" data-animate="fade-up" data-delay="0">
+            <div class="cert-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Java Full Stack Development</h3>
+              <div class="cert-issuer">KodNest</div>
+              <p class="cert-desc">Comprehensive Full Stack development certification covering Java backend, frontend technologies, and database systems.</p>
+            </div>
+          </article>
+
+          <article class="cert-card" data-animate="fade-up" data-delay="100">
+            <div class="cert-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Generative AI Applications &amp; Prompt Engineering for Large Language Models</h3>
+              <div class="cert-issuer">Professional Certification</div>
+              <p class="cert-desc">Certification in building Generative AI applications and advanced prompt engineering techniques for Large Language Models.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ ACHIEVEMENTS ═ -->
+    <section id="achievements" class="section section-alt" aria-labelledby="achievements-heading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Professional Impact</span>
+          <h2 id="achievements-heading" class="section-title">Engineering Impact</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="achievements-grid">
+          <article class="achievement-card" data-animate="fade-up" data-delay="0">
+            <div class="achievement-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p>Designed scalable enterprise AI applications using modern LLM architectures, enabling business intelligence and automated knowledge retrieval.</p>
+          </article>
+
+          <article class="achievement-card" data-animate="fade-up" data-delay="100">
+            <div class="achievement-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <p>Delivered AI automation solutions improving business productivity and operational efficiency across enterprise workflows.</p>
+          </article>
+
+          <article class="achievement-card" data-animate="fade-up" data-delay="200">
+            <div class="achievement-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <p>Strong experience across Full Stack Engineering and Enterprise AI Solution Development, bridging traditional software with modern AI capabilities.</p>
+          </article>
+
+          <article class="achievement-card" data-animate="fade-up" data-delay="300">
+            <div class="achievement-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            </div>
+            <p>Experienced in designing secure, production-ready AI applications for enterprise environments with focus on scalability, reliability, and compliance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ CONTACT ═════ -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Get In Touch</span>
+          <h2 id="contact-heading" class="section-title">Let's Build Intelligent Systems</h2>
+          <div class="section-line" aria-hidden="true"></div>
+          <p class="section-subtitle">Interested in Enterprise AI, Generative AI applications, AI automation, Multi-Agent Systems, or production-ready AI solutions? Let's connect.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-animate="fade-up">
+
+            <div class="contact-cards">
+              <a href="mailto:mohammednawazkhan40@gmail.com" class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <div class="contact-card-label">Email</div>
+                  <div class="contact-card-value">mohammednawazkhan40@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="tel:+918088050599" class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-card-label">Phone</div>
+                  <div class="contact-card-value">+91 8088050599</div>
+                </div>
+              </a>
+
+              <div class="contact-card no-link">
+                <div class="contact-card-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <div class="contact-card-label">Location</div>
+                  <div class="contact-card-value">Bengaluru, India</div>
+                </div>
+              </div>
+
+              <a href="https://www.linkedin.com/in/mohd-nawaz-khan-b78643219" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-card-label">LinkedIn</div>
+                  <div class="contact-card-value">mohd-nawaz-khan-b78643219</div>
+                </div>
+              </a>
+
+              <a href="https://github.com/Nawaz-Khan" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <div class="contact-card-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-card-label">GitHub</div>
+                  <div class="contact-card-value">github.com/Nawaz-Khan</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="contact-buttons">
+              <a href="https://www.linkedin.com/in/mohd-nawaz-khan-b78643219" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                Connect on LinkedIn
+              </a>
+              <a href="https://github.com/Nawaz-Khan" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                View GitHub
+              </a>
+              <a href="mailto:mohammednawazkhan40@gmail.com" class="btn-ghost">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Email Me
+              </a>
+              <a href="assets/resume.pdf" download="Mohd_Nawaz_Khan_Resume.pdf" class="btn-resume-lg">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download Resume
+              </a>
+            </div>
+
+          </div>
+
+          <div class="contact-form-wrapper" data-animate="fade-up" data-delay="200">
+            <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+              <h3 class="form-title">Send a Message</h3>
+
+              <div class="form-group">
+                <label for="contactName" class="form-label">Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="contactName" name="name" class="form-input" placeholder="Your full name" required autocomplete="name" />
+                <span class="form-error" id="nameError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="contactEmail" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email" />
+                <span class="form-error" id="emailError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <input type="text" id="contactSubject" name="subject" class="form-input" placeholder="What's this about?" autocomplete="off" />
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message <span aria-hidden="true">*</span></label>
+                <textarea id="contactMessage" name="message" class="form-textarea" placeholder="Tell me about your project or opportunity..." rows="5" required></textarea>
+                <span class="form-error" id="messageError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn-submit" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+              <p class="form-note">This form is ready for backend integration. Reach me directly at <a href="mailto:mohammednawazkhan40@gmail.com">mohammednawazkhan40@gmail.com</a>.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════ FOOTER ════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-bracket">&lt;</span><span class="logo-text">MNK</span><span class="logo-bracket">/&gt;</span>
+          <p>Senior Generative AI Engineer<br />Bengaluru, India</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/mohd-nawaz-khan-b78643219" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/Nawaz-Khan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="mailto:mohammednawazkhan40@gmail.com" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mohd Nawaz Khan. All rights reserved.</p>
+        <p>Senior Generative AI Engineer · AI Solutions Architect · Bengaluru, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="main.js" defer></script>
+  <script src="projects.js" defer></script>
+</body>
+</html>
