@@ -181,104 +181,10 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   });
 })();
 
-/* ──────────────── HERO CANVAS ───────────────────────────────── */
-(function initHeroCanvas() {
-  const canvas = $('#heroCanvas');
-  if (!canvas) return;
-
-  // Check for reduced motion
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-  const ctx = canvas.getContext('2d');
-  let w, h, nodes, animId;
-
-  const COLORS = {
-    node:   'rgba(165, 180, 252, 0.5)',
-    line:   'rgba(165, 180, 252, 0.08)',
-    node2:  'rgba(196, 181, 253, 0.35)',
-  };
-  const NODE_COUNT = 55;
-  const MAX_DIST   = 180;
-
-  function resize() {
-    w = canvas.width  = canvas.offsetWidth;
-    h = canvas.height = canvas.offsetHeight;
-  }
-
-  function createNodes() {
-    return Array.from({ length: NODE_COUNT }, () => ({
-      x:  Math.random() * w,
-      y:  Math.random() * h,
-      vx: (Math.random() - 0.5) * 0.4,
-      vy: (Math.random() - 0.5) * 0.4,
-      r:  Math.random() * 2 + 1,
-      isAccent: Math.random() < 0.2,
-    }));
-  }
-
-  function draw() {
-    ctx.clearRect(0, 0, w, h);
-
-    // Update positions
-    nodes.forEach(n => {
-      n.x += n.vx;
-      n.y += n.vy;
-      if (n.x < 0 || n.x > w) n.vx *= -1;
-      if (n.y < 0 || n.y > h) n.vy *= -1;
-    });
-
-    // Draw connections
-    for (let i = 0; i < nodes.length; i++) {
-      for (let j = i + 1; j < nodes.length; j++) {
-        const dx = nodes[i].x - nodes[j].x;
-        const dy = nodes[i].y - nodes[j].y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < MAX_DIST) {
-          const alpha = (1 - dist / MAX_DIST) * 0.4;
-          ctx.beginPath();
-          ctx.strokeStyle = `rgba(165, 180, 252, ${alpha * 0.15})`;
-          ctx.lineWidth = 0.7;
-          ctx.moveTo(nodes[i].x, nodes[i].y);
-          ctx.lineTo(nodes[j].x, nodes[j].y);
-          ctx.stroke();
-        }
-      }
-    }
-
-    // Draw nodes
-    nodes.forEach(n => {
-      ctx.beginPath();
-      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-      ctx.fillStyle = n.isAccent ? COLORS.node2 : COLORS.node;
-      ctx.fill();
-    });
-
-    animId = requestAnimationFrame(draw);
-  }
-
-  function init() {
-    resize();
-    nodes = createNodes();
-    if (animId) cancelAnimationFrame(animId);
-    draw();
-  }
-
-  const resizeObserver = new ResizeObserver(() => {
-    resize();
-  });
-  resizeObserver.observe(canvas.parentElement);
-
-  init();
-
-  // Pause when not visible
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden) {
-      cancelAnimationFrame(animId);
-    } else {
-      animId = requestAnimationFrame(draw);
-    }
-  });
-})();
+/* ──────────────── HERO CANVAS (handled by hero3d.js) ───────── */
+// Canvas animation is fully managed by hero3d.js
+// This stub prevents the old basic version from running
+(function initHeroCanvas() { /* noop — hero3d.js handles this */ });
 
 /* ──────────────── TITLE ROTATOR ─────────────────────────────── */
 (function initTitleRotator() {

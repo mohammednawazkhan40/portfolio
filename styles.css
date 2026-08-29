@@ -763,3 +763,215 @@ input,textarea{font-family:inherit;}
   .nav-logo-img  { height: 38px; }
   .footer-logo-img { height: 48px; }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   3D HERO ENHANCEMENTS
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── BLOB DECORATIONS ─────────────────────────────────────────── */
+.hero-blob-1 {
+  position: absolute;
+  top: -8%;
+  right: -4%;
+  width: min(650px, 55vw);
+  height: min(650px, 55vw);
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%,
+    rgba(124,58,237,0.22) 0%,
+    rgba(79,70,229,0.10) 40%,
+    transparent 70%);
+  pointer-events: none;
+  animation: blob-drift-1 12s ease-in-out infinite alternate;
+  filter: blur(40px);
+}
+
+.hero-blob-2 {
+  position: absolute;
+  bottom: -12%;
+  left: -6%;
+  width: min(550px, 50vw);
+  height: min(550px, 50vw);
+  border-radius: 50%;
+  background: radial-gradient(circle at 60% 60%,
+    rgba(8,145,178,0.18) 0%,
+    rgba(6,182,212,0.08) 40%,
+    transparent 70%);
+  pointer-events: none;
+  animation: blob-drift-2 15s ease-in-out infinite alternate;
+  filter: blur(50px);
+}
+
+.hero-blob-3 {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  width: min(400px, 40vw);
+  height: min(400px, 40vw);
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(79,70,229,0.10) 0%,
+    transparent 65%);
+  pointer-events: none;
+  animation: blob-drift-3 18s ease-in-out infinite alternate;
+  filter: blur(60px);
+}
+
+@keyframes blob-drift-1 {
+  from { transform: translate(0,   0)   scale(1); }
+  to   { transform: translate(30px, 20px) scale(1.08); }
+}
+@keyframes blob-drift-2 {
+  from { transform: translate(0,   0)   scale(1); }
+  to   { transform: translate(-20px, -30px) scale(1.06); }
+}
+@keyframes blob-drift-3 {
+  from { transform: translate(0,   0)   scale(1); }
+  to   { transform: translate(20px, -15px) scale(1.12); }
+}
+
+/* ── PARALLAX SMOOTH TRANSITION ──────────────────────────────── */
+.hero-content,
+.hero-image-wrapper {
+  transition: transform 0.12s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+/* ── HERO SECTION DEPTH ───────────────────────────────────────── */
+.hero-section {
+  perspective: 1200px;
+}
+
+/* ── FLOATING BADGE ANIMATION ────────────────────────────────── */
+.hero-eyebrow {
+  animation: float-badge 4s ease-in-out infinite;
+}
+@keyframes float-badge {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-4px); }
+}
+
+/* ── HERO NAME SHIMMER ────────────────────────────────────────── */
+.hero-name {
+  position: relative;
+}
+.hero-name::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg,
+    transparent 30%,
+    rgba(165,180,252,0.08) 50%,
+    transparent 70%);
+  background-size: 200% 100%;
+  animation: name-shimmer 4s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes name-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── METRIC ITEMS COUNT-UP GLOW ──────────────────────────────── */
+.metric-value {
+  animation: metric-glow 3s ease-in-out infinite alternate;
+}
+@keyframes metric-glow {
+  from { text-shadow: none; }
+  to   { text-shadow: 0 0 20px rgba(165,180,252,0.4); }
+}
+
+/* ── CTA BUTTON PULSE ────────────────────────────────────────── */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed, #4f46e5);
+  background-size: 300% 300%;
+  animation: btn-border-rotate 3s linear infinite;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.btn-primary:hover::after {
+  opacity: 1;
+}
+@keyframes btn-border-rotate {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ── PROFILE IMAGE 3D TILT ───────────────────────────────────── */
+.hero-image-frame {
+  transform-style: preserve-3d;
+  animation: frame-float 6s ease-in-out infinite;
+}
+@keyframes frame-float {
+  0%, 100% { transform: translateY(0px) rotateX(0deg); }
+  25%       { transform: translateY(-8px) rotateX(1.5deg); }
+  50%       { transform: translateY(-12px) rotateX(0deg); }
+  75%       { transform: translateY(-6px) rotateX(-1.5deg); }
+}
+
+/* ── BADGE STAGGER ANIMATION ─────────────────────────────────── */
+.hero-badges .badge {
+  animation: badge-appear 0.5s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+.hero-badges .badge:nth-child(1) { animation-delay: 0.6s; }
+.hero-badges .badge:nth-child(2) { animation-delay: 0.72s; }
+.hero-badges .badge:nth-child(3) { animation-delay: 0.84s; }
+.hero-badges .badge:nth-child(4) { animation-delay: 0.96s; }
+.hero-badges .badge:nth-child(5) { animation-delay: 1.08s; }
+.hero-badges .badge:nth-child(6) { animation-delay: 1.20s; }
+.hero-badges .badge:nth-child(7) { animation-delay: 1.32s; }
+.hero-badges .badge:nth-child(8) { animation-delay: 1.44s; }
+
+@keyframes badge-appear {
+  from { opacity: 0; transform: scale(0.7) translateY(10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ── HERO GRID SUBTLE MOVE ───────────────────────────────────── */
+.hero-grid {
+  animation: grid-shift 20s linear infinite;
+}
+@keyframes grid-shift {
+  from { background-position: 0 0; }
+  to   { background-position: 64px 64px; }
+}
+
+/* ── SECTION ENTRANCE WITH DEPTH ─────────────────────────────── */
+[data-animate].in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── CARD 3D HOVER ───────────────────────────────────────────── */
+.expertise-card,
+.project-card,
+.timeline-card,
+.cert-card,
+.achievement-card {
+  transform-style: preserve-3d;
+  transition: transform 0.25s cubic-bezier(0.25,0.46,0.45,0.94),
+              box-shadow 0.25s ease,
+              border-color 0.25s ease;
+}
+
+/* ── REDUCE MOTION OVERRIDES ─────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .hero-blob-1, .hero-blob-2, .hero-blob-3,
+  .hero-eyebrow, .hero-name::after,
+  .metric-value, .hero-image-frame,
+  .hero-badges .badge, .hero-grid {
+    animation: none !important;
+  }
+  .hero-content, .hero-image-wrapper {
+    transition: none !important;
+  }
+}
