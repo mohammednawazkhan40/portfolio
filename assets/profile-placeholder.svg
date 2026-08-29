@@ -36,6 +36,6 @@
   <circle cx="300" cy="300" r="295" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.25"/>
   <circle cx="300" cy="300" r="280" fill="none" stroke="#06b6d4" stroke-width="0.5" opacity="0.12" stroke-dasharray="8 12"/>
   <!-- initials -->
-  <text x="300" y="255" font-family="Inter,Manrope,sans-serif" font-size="80" font-weight="900" fill="#3b82f6" text-anchor="middle" opacity="0.85">MNK</text>
+  <text x="300" y="255" font-family="Inter,Manrope,sans-serif" font-size="80" font-weight="900" fill="#3b82f6" text-anchor="middle" opacity="0.85">NK</text>
   <text x="300" y="288" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="#60a5fa" text-anchor="middle" opacity="0.55" letter-spacing="4">ADD PHOTO HERE</text>
 </svg>

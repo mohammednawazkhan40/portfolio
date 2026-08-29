@@ -1,4 +1,4 @@
-# Mohd Nawaz Khan — Portfolio
+# Nawaz Khan — Portfolio
 
 **Senior Generative AI Engineer | AI Solutions Architect | Enterprise AI | Multi-Agent Systems | Voice AI**
 
@@ -8,8 +8,9 @@ Live site: [https://mohammednawazkhan40.github.io/portfolio/](https://mohammedna
 
 ## Setup
 
-1. Drop `assets/profile.jpg` — your professional photograph
-2. Drop `assets/resume.pdf` — your CV
+1. Drop `assets/profile.jpg` — your professional headshot (provided)
+2. Drop `assets/banner.jpg` — the AI Engineer banner image (provided)
+3. Drop `assets/resume.pdf` — your CV
 3. Open `index.html` in any browser
 
 No build step. No dependencies. Pure HTML/CSS/JS.
