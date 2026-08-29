@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mohd Nawaz Khan — Resume</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    font-size: 10pt;
+    color: #1a1a1a;
+    background: #fff;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 48px;
+    background: #fff;
+  }
+
+  /* ── HEADER ── */
+  .header { margin-bottom: 20px; }
+  .name {
+    font-size: 24pt;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #111;
+    margin-bottom: 4px;
+  }
+  .title {
+    font-size: 10.5pt;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 9pt;
+    color: #555;
+  }
+  .contact-row a { color: #4f46e5; text-decoration: none; }
+
+  /* ── DIVIDER ── */
+  hr {
+    border: none;
+    border-top: 1.5px solid #e5e7eb;
+    margin: 14px 0;
+  }
+
+  /* ── SECTION HEADING ── */
+  .section-title {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+  }
+
+  /* ── EXPERIENCE ── */
+  .exp-item { margin-bottom: 16px; }
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3px;
+  }
+  .exp-role { font-size: 10pt; font-weight: 700; color: #111; }
+  .exp-company { font-size: 10pt; font-weight: 400; color: #555; font-style: italic; }
+  .exp-date { font-size: 9pt; color: #666; white-space: nowrap; }
+
+  .exp-bullets { padding-left: 0; margin: 5px 0 5px 0; }
+  .exp-bullets li {
+    position: relative;
+    padding-left: 14px;
+    font-size: 9.5pt;
+    color: #333;
+    margin-bottom: 3px;
+    line-height: 1.5;
+    list-style: none;
+  }
+  .exp-bullets li::before {
+    content: '•';
+    position: absolute;
+    left: 2px;
+    color: #9ca3af;
+  }
+  .env-line {
+    font-size: 8.5pt;
+    color: #777;
+    margin-top: 4px;
+  }
+  .env-line strong { color: #555; font-weight: 600; }
+
+  /* ── COMPETENCIES GRID ── */
+  .comp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 32px;
+    margin-bottom: 4px;
+  }
+  .comp-item { font-size: 9.5pt; color: #333; }
+  .comp-item strong { font-weight: 600; color: #111; display: block; margin-bottom: 1px; }
+
+  /* ── PROJECTS ── */
+  .project-item { margin-bottom: 11px; }
+  .project-name { font-size: 10pt; font-weight: 700; color: #111; margin-bottom: 2px; }
+  .project-desc { font-size: 9.5pt; color: #444; line-height: 1.5; margin-bottom: 2px; }
+  .project-tech { font-size: 8.5pt; color: #777; }
+  .project-tech strong { color: #555; font-weight: 600; }
+
+  /* ── CERTS ── */
+  .cert-list { display: flex; gap: 32px; flex-wrap: wrap; }
+  .cert-item { font-size: 9.5pt; color: #333; position: relative; padding-left: 14px; }
+  .cert-item::before { content: '•'; position: absolute; left: 2px; color: #9ca3af; }
+
+  /* ── SKILLS GRID ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 32px;
+  }
+  .skill-row { font-size: 9.5pt; color: #333; }
+  .skill-row strong { font-weight: 600; color: #111; display: block; }
+
+  /* ── EDUCATION ── */
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .edu-degree { font-size: 10pt; font-weight: 700; color: #111; }
+  .edu-school { font-size: 9.5pt; font-weight: 400; color: #555; font-style: italic; }
+  .edu-date   { font-size: 9pt; color: #666; }
+
+  /* ── ACHIEVEMENTS ── */
+  .ach-list { padding: 0; }
+  .ach-list li {
+    position: relative; padding-left: 14px;
+    font-size: 9.5pt; color: #333;
+    margin-bottom: 4px; line-height: 1.5; list-style: none;
+  }
+  .ach-list li::before { content: '•'; position: absolute; left: 2px; color: #9ca3af; }
+
+  /* ── DOWNLOAD BTN (screen only) ── */
+  .download-bar {
+    background: #4f46e5;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+  }
+  .download-bar:hover { background: #4338ca; }
+
+  @media print {
+    .download-bar { display: none; }
+    .page { padding: 20px 28px; }
+    body { font-size: 9.5pt; }
+    .name { font-size: 20pt; }
+  }
+</style>
+</head>
+<body>
+
+<div class="download-bar" onclick="window.print()">
+  ⬇ Save as PDF — Use your browser's Print dialog → Save as PDF
+</div>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="name">MOHD NAWAZ KHAN</div>
+    <div class="title">Senior Generative AI Engineer | AI Solutions Architect | Enterprise AI | Multi-Agent Systems | Voice AI</div>
+    <div class="contact-row">
+      <span>✉ <a href="mailto:mohammednawazkhan40@gmail.com">mohammednawazkhan40@gmail.com</a></span>
+      <span>📞 <a href="tel:+918088050599">+91 8088050599</a></span>
+      <span>📍 Bengaluru, India</span>
+      <span><a href="https://www.linkedin.com/in/mohd-nawaz-khan-b78643219" target="_blank">LinkedIn</a></span>
+      <span><a href="https://github.com/mohammednawazkhan40" target="_blank">GitHub</a></span>
+    </div>
+  </div>
+
+  <hr/>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section-title">Professional Summary</div>
+  <p style="font-size:9.5pt;color:#333;line-height:1.6;margin-bottom:14px;">
+    Senior Generative AI Engineer with 6+ years of experience in Enterprise AI, Full Stack Development, and AI-powered business solutions. Experienced in designing scalable AI applications using Large Language Models (LLMs), Multi-Agent Systems, Retrieval-Augmented Generation (RAG), Voice AI, AI Automation, and cloud-native architectures. Strong expertise in Python, Java, FastAPI, Spring Boot, LangChain, LangGraph, CrewAI, OpenAI, Azure OpenAI, Docker, and enterprise integrations. Passionate about building secure, production-ready AI systems that automate business processes and improve operational efficiency.
+  </p>
+
+  <hr/>
+
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <div class="section-title">Professional Experience</div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <div><span class="exp-role">Generative AI Application Engineer,</span> <span class="exp-company">ISAN Data Systems Pvt. Ltd.</span></div>
+      <div class="exp-date">07/2024 – Present</div>
+    </div>
+    <ul class="exp-bullets">
+      <li>Designed and developed enterprise-grade Generative AI applications using GPT-4, Claude, Gemini, and Llama models.</li>
+      <li>Built production-ready Multi-Agent AI systems using LangGraph and CrewAI for workflow automation.</li>
+      <li>Developed Retrieval-Augmented Generation (RAG) solutions with vector databases for enterprise knowledge management.</li>
+      <li>Implemented AI-powered document intelligence platforms for PDF analysis, semantic search, and intelligent summarization.</li>
+      <li>Developed Voice AI applications integrating Speech-to-Text, Text-to-Speech, and real-time conversational AI.</li>
+      <li>Integrated enterprise AI solutions with REST APIs, databases, CRM, ERP, and third-party business systems.</li>
+      <li>Optimized LLM performance through prompt engineering, caching, streaming responses, and cost optimization.</li>
+      <li>Containerized AI applications using Docker and deployed scalable solutions on Azure and AWS.</li>
+      <li>Worked closely with solution architects, product teams, and enterprise stakeholders to deliver AI products.</li>
+    </ul>
+    <div class="env-line"><strong>Environment:</strong> Python, FastAPI, LangChain, LangGraph, CrewAI, OpenAI, Azure OpenAI, Pinecone, PostgreSQL, Docker, Azure, AWS</div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <div><span class="exp-role">Junior Full Stack Engineer,</span> <span class="exp-company">Cognizant</span></div>
+      <div class="exp-date">11/2022 – 06/2024</div>
+    </div>
+    <ul class="exp-bullets">
+      <li>Developed enterprise web applications using Java, Spring Boot, Hibernate, and REST APIs.</li>
+      <li>Designed backend microservices and reusable APIs following clean architecture principles.</li>
+      <li>Implemented authentication, authorization, and secure API integrations.</li>
+      <li>Optimized SQL queries and improved backend performance.</li>
+      <li>Collaborated with cross-functional Agile teams to deliver enterprise applications.</li>
+      <li>Participated in code reviews, debugging, testing, deployment, and production support.</li>
+    </ul>
+    <div class="env-line"><strong>Environment:</strong> Java, Spring Boot, Hibernate, REST APIs, Oracle SQL, HTML, CSS, JavaScript, Git, Maven</div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <div><span class="exp-role">Java Full Stack Engineer (Intern),</span> <span class="exp-company">Kodnest</span></div>
+      <div class="exp-date">09/2020 – 08/2022</div>
+    </div>
+    <ul class="exp-bullets">
+      <li>Completed intensive Java Full Stack training covering backend, frontend, and database development.</li>
+      <li>Developed end-to-end web applications using Java, JDBC, Servlets, JSP, HTML, CSS, JavaScript, and Oracle SQL.</li>
+      <li>Built CRUD applications with MVC architecture and database integration.</li>
+      <li>Implemented authentication, session management, and responsive UI components.</li>
+      <li>Worked on object-oriented programming, collections, exception handling, and software engineering best practices.</li>
+    </ul>
+    <div class="env-line"><strong>Environment:</strong> Java, J2EE, JDBC, Servlets, Oracle SQL, HTML, CSS, JavaScript</div>
+  </div>
+
+  <hr/>
+
+  <!-- EDUCATION -->
+  <div class="section-title">Education</div>
+  <div class="edu-row" style="margin-bottom:14px;">
+    <div><span class="edu-degree">Bachelor of Computer Applications (BCA),</span> <span class="edu-school">Kalinga University, Raipur, Chhattisgarh</span></div>
+    <div class="edu-date">07/2020</div>
+  </div>
+
+  <hr/>
+
+  <!-- CORE COMPETENCIES -->
+  <div class="section-title">Core Competencies</div>
+  <div class="comp-grid" style="margin-bottom:14px;">
+    <div class="comp-item"><strong>Artificial Intelligence</strong>Generative AI, LLMs, Prompt Engineering, AI Agents, Multi-Agent Systems, Agentic AI, RAG, Voice AI, AI Automation, AI Workflows, MCP</div>
+    <div class="comp-item"><strong>Frameworks</strong>LangChain, LangGraph, CrewAI, AutoGen, LlamaIndex, FastAPI</div>
+    <div class="comp-item"><strong>Programming</strong>Python, Java, Spring Boot, REST APIs, HTML, CSS, JavaScript</div>
+    <div class="comp-item"><strong>Databases</strong>PostgreSQL, MySQL, Oracle SQL, MongoDB, Pinecone, ChromaDB, FAISS</div>
+    <div class="comp-item"><strong>Cloud &amp; DevOps</strong>Azure, AWS, Docker, Kubernetes, Git, GitHub Actions, CI/CD</div>
+    <div class="comp-item"><strong>AI Platforms</strong>OpenAI, Azure OpenAI, Claude, Gemini, Llama, Whisper, ElevenLabs</div>
+  </div>
+
+  <hr/>
+
+  <!-- ENTERPRISE AI PROJECTS -->
+  <div class="section-title">Enterprise AI Projects</div>
+
+  <div class="project-item">
+    <div class="project-name">Enterprise AI Knowledge Assistant</div>
+    <div class="project-desc">Designed an enterprise chatbot using RAG architecture with semantic search across business documents, enabling employees to retrieve accurate organizational knowledge using natural language.</div>
+    <div class="project-tech"><strong>Technology:</strong> LangChain, GPT-4, Pinecone, FastAPI, PostgreSQL</div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-name">Multi-Agent Enterprise Automation Platform</div>
+    <div class="project-desc">Developed autonomous AI agents for HR, Sales, Finance, and Operations capable of collaborating, delegating tasks, and executing business workflows.</div>
+    <div class="project-tech"><strong>Technology:</strong> LangGraph, CrewAI, GPT-4, Python</div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-name">Voice AI Customer Support Assistant</div>
+    <div class="project-desc">Built an AI-powered voice assistant capable of handling customer interactions, speech recognition, response generation, and automated call summaries.</div>
+    <div class="project-tech"><strong>Technology:</strong> Whisper, ElevenLabs, OpenAI, FastAPI</div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-name">Intelligent Document Processing Platform</div>
+    <div class="project-desc">Created an AI platform for extracting, classifying, summarizing, and querying enterprise documents including invoices, contracts, resumes, and reports.</div>
+    <div class="project-tech"><strong>Technology:</strong> OCR, LangChain, OpenAI, PostgreSQL</div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-name">Enterprise AI Copilot</div>
+    <div class="project-desc">Developed an AI Copilot for automating email drafting, meeting summaries, proposal generation, and knowledge retrieval within enterprise environments.</div>
+    <div class="project-tech"><strong>Technology:</strong> GPT-4, FastAPI, React, PostgreSQL</div>
+  </div>
+
+  <hr/>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section-title">Certifications</div>
+  <div class="cert-list" style="margin-bottom:14px;">
+    <span class="cert-item">Java Full Stack Development – Kodnest</span>
+    <span class="cert-item">Generative AI Applications</span>
+    <span class="cert-item">Prompt Engineering for Large Language Models</span>
+  </div>
+
+  <hr/>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section-title">Technical Skills</div>
+  <div class="skills-grid" style="margin-bottom:14px;">
+    <div class="skill-row"><strong>Languages</strong>Python, Java, JavaScript, SQL</div>
+    <div class="skill-row"><strong>AI</strong>Generative AI, LLMs, AI Agents, RAG, Prompt Engineering, Voice AI</div>
+    <div class="skill-row"><strong>Frameworks</strong>FastAPI, Spring Boot, LangChain, LangGraph, CrewAI</div>
+    <div class="skill-row"><strong>Cloud</strong>Azure, AWS</div>
+    <div class="skill-row"><strong>Databases</strong>PostgreSQL, Oracle SQL, Pinecone, ChromaDB</div>
+    <div class="skill-row"><strong>DevOps</strong>Docker, Kubernetes, Git, CI/CD</div>
+  </div>
+
+  <hr/>
+
+  <!-- ACHIEVEMENTS -->
+  <div class="section-title">Achievements</div>
+  <ul class="ach-list">
+    <li>Designed scalable enterprise AI applications using modern LLM architectures.</li>
+    <li>Delivered AI automation solutions improving business productivity and operational efficiency.</li>
+    <li>Strong experience across Full Stack Engineering and Enterprise AI Solution Development.</li>
+    <li>Experienced in designing secure, production-ready AI applications for enterprise environments.</li>
+  </ul>
+
+</div>
+</body>
+</html>
